@@ -3,7 +3,7 @@ import './App.css';
 
 const Titulo = function(){
   return (
-    <h1>Lista de Compras</h1>
+    <h1>Lista de Compras:</h1>
   )}
 
   const Lista = function({itemList}){
