@@ -26,7 +26,7 @@ function App() {
     setItemList(newItemList);
   }, [itemList]);
   
-  const addItem = () => {
+  const AddItem = () => {
     setItemList([item].concat(itemList))
     setItem('')
 }
@@ -37,7 +37,7 @@ function App() {
       <br/>
       <br/>
       <input type="text" placeholder="Item" value={item} name="item" onChange = {e => setItem(e.target.value)} />
-      <button class="btn btn-primary" onClick={addItem}>Adicionar Item</button>
+      <button class="btn btn-primary" onClick={AddItem}>Adicionar Item</button>
       <button class="btn btn-primary" onClick={e => handleRemoveItem(handleRemoveItem)}> Limpar Lista </button>
       
       <Lista itemList={itemList}></Lista>
